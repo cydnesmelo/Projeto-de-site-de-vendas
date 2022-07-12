@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+
+html,
+body {
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-width: auto;
+}
+
+@keyframes flash {
+  0% { filter: drop-shadow(0 0 20px #ff00bb) contrast(2) brightness(2);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
+  50% { opacity: 0.10; }
+  100% { filter: drop-shadow(0 0 20px #ff00bb) contrast(2) brightness(2);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
+}
+
+.imagem{
+  width: 30%;
+  height: auto;
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.logo{
+  text-align: center;
+  width: 100%;
+}
+
+
+.menu {
+  background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 0)), url(imagens/fundoNeon1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: auto;
+}
+
+.menu nav{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+}
+
+a:hover {
+  align-items: center;
+  box-shadow: rgb(255, 0, 204) 0px 2px 0px;
+}
+
+.corpo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family:'Edu QLD Beginner', cursive;
+  font-size: 20px;
+}
+
+/******** estilo da galeria********/
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.gallery img:hover {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 20px #ff00bb);
+    transition: 0.3s;
+}
+
+.corpo-img{
+  width: 30%;
+}
+
+.esp{
+  margin-bottom: 10%;
+}
+
+.title-prod{
+  color: #fff;
+}
+
+.descri-prod{
+  color: #fff;
+}
+
+/******** fim do estilo da galeria********/
+
+.org {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.caixas {
+  display: flex;
+  gap: 0.8rem;
+  height: auto;
+}
+.texto {
+  padding: 0 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 3px 2px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.campo-form{
+  padding: 10px 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 3px 2px;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.form-pai{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border:solid 1px #fff;
+  border-radius: 5px;
+  width: 30%;
+  height: auto;
+}
+
+.form-title{
+  color: #fff;
+}
+
+.btn-cad {
+  display: flex;
+  background-color: #0000cd;
+  color: #fff;
+  border: solid 1px #0000cd;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.btn-cad:hover {
+  background-color: #0026ff;
+  color: #fff;
+  border: solid 1px #0026ff;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.btn-cad:active {
+  background-color: #0026ff;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.btn-cad2 {
+  background-color: #0000cd;
+  color: #fff;
+  border: solid 1px #0000cd;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.btn-cad2:hover {
+  background-color: #0026ff;
+  color: #fff;
+  border: solid 1px #0026ff;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.btn-cad2:active {
+  background-color: #0026ff;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #ccc;
+  color: #fff;
+  background-color: #000;
+}
